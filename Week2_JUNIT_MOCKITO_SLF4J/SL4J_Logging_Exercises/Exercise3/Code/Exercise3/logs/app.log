@@ -1,0 +1,4 @@
+00:06:28.310 [main] INFO  SLF4JExercise3.LoggingExample - 10
+00:06:28.314 [main] INFO  SLF4JExercise3.LoggingExample - 20
+00:07:50.683 [main] INFO  SLF4JExercise3.LoggingExample - 10
+00:07:50.686 [main] INFO  SLF4JExercise3.LoggingExample - 20
