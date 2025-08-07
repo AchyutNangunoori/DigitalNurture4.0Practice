@@ -1,0 +1,16 @@
+const CourseDetails = (props) => {
+  return (
+    <div>
+        <h1>course details</h1>
+      <ul>
+        {props.courses.map((course) => (
+          <div key={course.id}>
+            <h3>{course.cname}</h3>
+            <h4>{course.date}</h4>
+          </div>
+        ))}
+      </ul>
+    </div>
+  );
+};
+export default CourseDetails;
