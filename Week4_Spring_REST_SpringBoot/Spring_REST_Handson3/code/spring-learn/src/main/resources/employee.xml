@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="employee1" class="com.cognizant.spring_learn.model.Employee">
+<property name="name" value="abhiram"></property>
+<property name="skill" ref="skill3"></property>
+</bean>
+<bean id="employee2" class="com.cognizant.spring_learn.model.Employee">
+<property name="name" value="manasa"></property>
+<property name="skill" ref="skill1"></property>
+</bean>
+<bean id="employee3" class="com.cognizant.spring_learn.model.Employee">
+<property name="name" value="shiva"></property>
+<property name="skill" ref="skill4"></property>
+</bean>
+<bean id="employee4" class="com.cognizant.spring_learn.model.Employee">
+<property name="name" value="harshith"></property>
+<property name="skill" ref="skill2"></property>
+</bean>
+
+
+<bean id="skill1" class="com.cognizant.spring_learn.model.Skill">
+<property name="name" value="java"></property>
+</bean>
+<bean id="skill2" class="com.cognizant.spring_learn.model.Skill">
+<property name="name" value="sql"></property>
+</bean>
+<bean id="skill3" class="com.cognizant.spring_learn.model.Skill">
+<property name="name" value="spring"></property>
+</bean>
+<bean id="skill4" class="com.cognizant.spring_learn.model.Skill">
+<property name="name" value="REST"></property>
+</bean>
+
+<bean id="employeeList" class="java.util.ArrayList">
+<constructor-arg>
+<list>
+<ref bean="employee1"/>
+<ref bean="employee2"/>
+<ref bean="employee3"/>
+<ref bean="employee4"/>
+</list>
+</constructor-arg>
+</bean>
+
+</beans>
